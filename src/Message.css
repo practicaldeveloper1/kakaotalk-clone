@@ -1,0 +1,43 @@
+.message {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.message__name {
+  padding: 3px;
+  font-weight: 600;
+  font-size: xx-small;
+}
+
+.message.message__sender {
+  align-self: flex-end;
+}
+
+.message.message__sender .message__text {
+  background-color: #ffe812;
+}
+
+.message__text {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.message__details {
+  display: flex;
+}
+
+.message__timestamp {
+  font-size: xx-small;
+  align-self: flex-end;
+}
+
+.message__sender .message__timestamp {
+  order: 1;
+}
+.message__sender .message__text {
+  order: 2;
+}
+.message__sender .message__name {
+  text-align: right;
+}

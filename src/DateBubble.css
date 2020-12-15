@@ -1,0 +1,9 @@
+.dateBubble {
+  background-color: rgb(146, 163, 171);
+  border-radius: 20px;
+  color: rgb(238, 247, 252);
+  width: fit-content;
+  margin: 10px auto;
+  font-size: 14px;
+  padding: 3px 15px;
+}
