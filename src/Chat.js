@@ -67,6 +67,12 @@ function Chat() {
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     });
 
+    db.collection('rooms').doc(roomId).update({
+      timestamp: firebase.firestore.FieldValue.serverTimestamp()
+    })
+
+
+
     inputRef.current.value = "";
 
   }
