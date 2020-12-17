@@ -25,6 +25,7 @@ function SidebarChat({ id, name }) {
         .doc(id)
         .collection('messages')
         .orderBy('timestamp', 'desc')
+        .limit(1)
         .onSnapshot((snapshot) => {
           setMessages(snapshot.docs.map((doc) =>
             doc.data()))
